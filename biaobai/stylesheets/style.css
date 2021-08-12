@@ -74,7 +74,7 @@ span {
 
 /* reset */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6,  blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -92,7 +92,16 @@ time, mark, audio, video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline; }
-
+p{
+ margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  overflow-y:auto;
+  max-height:250px;
+}
 html {
   line-height: 1; 
   content-zooming:none;
@@ -334,6 +343,7 @@ section.container > form.flip > .front {
   position: absolute;
   left: 5%;
   top: 5%;
+ overflow-y:hidden;
   z-index: 0;
   -webkit-transition: .5s .5s;
   -moz-transition: .5s .5s;
@@ -444,7 +454,7 @@ textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 90%;
-  height: 160px;
+  height: 360px;
   padding: 10px;
   display: block;
   background: transparent;
