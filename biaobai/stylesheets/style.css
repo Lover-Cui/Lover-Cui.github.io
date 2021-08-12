@@ -99,7 +99,7 @@ p{
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
-  overflow-y:auto;
+  overflow:auto;
   max-height:250px;
 }
 html {
@@ -343,7 +343,6 @@ section.container > form.flip > .front {
   position: absolute;
   left: 5%;
   top: 5%;
- overflow-y:hidden;
   z-index: 0;
   -webkit-transition: .5s .5s;
   -moz-transition: .5s .5s;
