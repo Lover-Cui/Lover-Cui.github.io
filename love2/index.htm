@@ -390,7 +390,11 @@
 </script>
 </head>
 <body>
-   <audio src="lover.mp3" controls="controls" autoplay="autoplay" loop="loop" id="music"></audio>
+   <audio id="audio" src="lover.mp3" style="opacity:0" preload="auto" controls loop hidden="true"></audio>
+ <script type="text/javascript">
+var myAuto = document.getElementById('audio');  
+                    myAuto.play(); 
+</script>
     <canvas id="canvas">你的浏览器不支持HTML5画布技术，请使用支持HTML5的浏览器(http://keleyi.com/a/bjac/g039tue3.htm)</canvas>
 </body>
 </html>
